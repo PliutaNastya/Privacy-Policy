@@ -46,6 +46,10 @@
             }
         }));
     }
+    let links = document.querySelectorAll(".menu__link");
+    for (let link of links) link.onclick = () => {
+        document.documentElement.classList.remove("lock", "menu-open");
+    };
     class DynamicAdapt {
         constructor(type) {
             this.type = type;
