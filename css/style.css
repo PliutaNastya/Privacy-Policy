@@ -102,33 +102,12 @@ h6 {
 /*
 (i) Стили будут применяться ко 
 всем классам содержащим *__container
-Например header__container, main__container и т.д.
-Снипет (HTML): cnt
 */
 
 [class*=__container] {
   max-width: 76.875rem;
   margin: 0 auto;
   padding: 0 0.9375rem;
-}
-
-[class*=-ibg] {
-  position: relative;
-}
-
-[class*=-ibg] img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-[class*=-ibg_contain] img {
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 .header a {
@@ -430,6 +409,12 @@ h6 {
 .item-footer__disclaimer {
   font-size: 16px;
   line-height: 1.3;
+}
+
+.social__link_svg:hover {
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .menu-footer {
@@ -890,6 +875,18 @@ h6 {
 @media (max-width: 47.99875em) and (max-width: 47.99875em) {
   .menu__body::before {
     height: 90px;
+  }
+}
+
+@media (max-width: 47.99875em) and (max-width: 28.75em) {
+  .menu__body::before {
+    height: 80px;
+  }
+}
+
+@media (max-width: 47.99875em) and (max-width: 21.875em) {
+  .menu__body::before {
+    height: 75px;
   }
 }
 
